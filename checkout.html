@@ -1,0 +1,332 @@
+<!DOCTYPE>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>صفحه صورتحساب</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body id="ScrollSide">
+<section class="P-Header">
+    <div class="Fix-Headr fixed-top bg-theme text-white">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-3 p-0">
+                    <button class="bar-menu d-block d-sm-none bg-transparent text-white border-0"><i class="fas fa-bars"></i></button>
+                    <ul class="right-head d-flex align-items-center justify-content-start">
+                        <li class="d-block"><a class="d-block p-3 position-relative text-white li-head" href="#">درباره ما</a></li>
+                        <li class="d-block"><a class="d-block p-3 position-relative text-white li-head" href="#">تماس با ما</a></li>
+                        <li class="d-block"><a class="d-block p-3 position-relative text-white li-head" href="#">کمک میخوای؟</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-9 p-0">
+                    <ul class="left-head d-flex align-items-center justify-content-end">
+                        <li class="d-block"><a class="d-block p-3 position-relative text-white li-head" href="#"><i class="mr-1 rounded-circle far fa-user"></i>ورود به حساب کاربری</a></li>
+                        <li class="gp-1">|</li>
+                        <li class="d-block">
+                            <a class="d-block p-3 position-relative text-white li-head" href="#search"><i class="fas fa-search"></i></a>
+                            <div class="BX-serch position-fixed w-100 h-100">
+                                <div class="container w-100 h-100">
+                                    <a class="close position-absolute" href="#close"></a>
+                                    <div class="search-main">
+                                        <form class="search-inner">
+                                            <input class="text-white m-0 w-100 d-block border-0 bg-transparent" type="text" id="inputSearch" name="firstname" placeholder="">
+                                            <span class="search-info d-block text-white float-left mt-2">محصول مورد نظر خود را سرچ کنیدو سپس Enter را فشار دهید</span>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="Main-deta position-relative py-5">
+    <section class="P-Checkout py-3 py-md-5 container-fluid">
+        <h2 class="sub-ttle position-relative pb-4 mb-4 text-center font-weight-bold f-DINArabic">صورتحساب</h2>
+        <div class="row">
+            <div class="col-xl-9 col-md-8 col-sm-8 p-2">
+                <div class="head-item bg-white border-0 mb-4 rounded p-2 p-md-4">
+                    <h5 class="sub-ad mb-2">آدرس تحویل سفارش</h5>
+                    <div class="d-flex each-address py-3">
+                        <div class="check position-relative mr-2">
+                            <input type="checkbox" name="is_name" class="option_check" value="">
+                            <span class="checkmark position-absolute"></span>
+                        </div>
+                        <p>ایران . تهران , منطقه 10 , محله سلسبیل شمالی , دامپزشکی , سپیده نبوی , داریوش سلیمیان</p>
+                    </div>
+                    <div class="d-flex each-address py-3">
+                        <div class="check position-relative mr-2">
+                            <input type="checkbox" name="is_name" class="option_check" value="">
+                            <span class="checkmark position-absolute"></span>
+                        </div>
+                        <p>ایران . تهران , منطقه 10 , محله سلسبیل شمالی , دامپزشکی , سپیده نبوی , داریوش سلیمیان</p>
+                    </div>
+                    <div class="add-new text-right border-top mt-3">
+                        <a class="btn-efct1 px-3 py-2 text-white bg-theme rounded mt-3 d-inline-block text-center" data-toggle="modal" data-target="#adressmodal">ثبت آدرس جدید</a>
+                        <div class="Map-Modal modal fade align-items-center justify-content-center text-left mt-5 pt-5" id="adressmodal">
+                            <div class="modal-dialog w-100">
+                                <div class="modal-content head-item bg-white border-0 mb-4 rounded p-2 p-md-4 w-100 mt-5">
+                                    <div class="row">
+                                        <div class="col-md-6 p-2">
+                                            <form class="row" method="post" action="">
+                                                <div class="col-md-12 p-1 p-md-2 each-field">
+                                                    <lable class="ttle-field d-block mb-2" for="name"><i class="mr-1 fas fa-pencil-alt"></i>نام و نام خانوادگی<span class="nececer-y">*</span></lable>
+                                                    <input class="item-field d-block w-100 bg-white rounded border" type="text" name="name" placeholder="نام و نام خانوادگی خود را وارد کنید" />
+                                                </div>
+                                                <div class="col-md-12 p-1 p-md-2 each-field">
+                                                    <lable class="ttle-field d-block mb-2" for="mobile"><i class="mr-1 fas fa-pencil-alt"></i>موبایل<span class="nececer-y">*</span></lable>
+                                                    <input class="item-field d-block w-100 bg-white rounded border" type="number" name="mobile" placeholder="شماره موبایل خود را وارد کنید" />
+                                                </div>
+                                                <div class="col-md-12 p-1 p-md-2 each-field">
+                                                    <lable class="ttle-field d-block mb-2" for="email"><i class="mr-1 fas fa-pencil-alt"></i>ایمیل <span class="nececer-y">*</span></lable>
+                                                    <input class="item-field d-block w-100 bg-white rounded border" type="email" name="email" placeholder="ایمیل  خود را وارد کنید" />
+                                                </div>
+                                                <div class="col-md-12 p-1 p-md-2 each-field">
+                                                    <lable class="ttle-field d-block mb-2" for="title"><i class="mr-1 fas fa-pencil-alt"></i>عنوان<span class="nececer-y">*</span></lable>
+                                                    <input class="item-field d-block w-100 bg-white rounded border" type="text" name="title" placeholder="عنوان پیام خود را وارد کنید" />
+                                                </div>
+                                                <div class="col-md-12 p-1 p-md-2 each-field">
+                                                    <lable class="ttle-field d-block mb-2" for="passage"><i class="mr-1 fas fa-pencil-alt"></i>متن پیام<span class="nececer-y">*</span></lable>
+                                                    <textarea class="item-field d-block w-100 bg-white rounded border" name="passage" rows="6" placeholder="متن پیام خود را وارد کنید" ></textarea>
+                                                </div>
+                                                <div class="col-md-12 p-1 p-md-2 each-field text-center">
+                                                    <a class="btn-efct1 px-3 py-2 text-white bg-theme rounded mt-md-3 d-inline-block" href="#">ثبت آدرس</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <iframe class="mw-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-item bg-white border-0 mb-4 rounded p-2 p-md-4 row align-items-center">
+                    <div class="col-md-6 p-1">
+                        <h5 class="sub-ad mb-3">نحوه دریافت</h5>
+                        <ul class="row align-items-center">
+                            <li class="check position-relative d-block col-6">
+                                <label class="prt-txt m-0 d-block">درب منزل</label>
+                                <input type="radio" name="is_name" class="option_check" value="">
+                                <span class="checkmark position-absolute"></span>
+                            </li>
+                            <li class="check position-relative d-block col-6">
+                                <label class="prt-txt m-0 d-block">درب رستوران</label>
+                                <input type="radio" name="is_name" class="option_check" value="">
+                                <span class="checkmark position-absolute"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 p-1">
+                        <h5 class="sub-ad mb-3">نحوه پرداخت</h5>
+                        <ul class="row align-items-center">
+                            <li class="check position-relative d-block col-6">
+                                <label class="prt-txt m-0 d-block">آنلاین</label>
+                                <input type="radio" name="is_name" class="option_check" value="">
+                                <span class="checkmark position-absolute"></span>
+                            </li>
+                            <li class="check position-relative d-block col-6">
+                                <label class="prt-txt m-0 d-block">نقدی</label>
+                                <input type="radio" name="is_name" class="option_check" value="">
+                                <span class="checkmark position-absolute"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="head-item bg-white border-0 mb-4 rounded p-2 p-md-4">
+                    <h5 class="sub-ad mb-2">محصولات سبد خرید</h5>
+                    <div class="row">
+                        <div class="col-sm-6 p-2">
+                            <div class="all-order each-order p-2 p-lg-3 row align-items-center">
+                                <div class="col-9 p-0 text-left font-weight-bold d-flex align-items-center">
+                                    <img class="w-25 float-left mr-2 pr-cart" src="images/p4.png" alt="image"/>
+                                    <div>
+                                        <h4 class="name-c mb-2 font-weight-bold">ساندویچ هات داگ ویژه</h4>
+                                        <p class="prc-order">قیمت  12,500,000<span>تومان</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 d-flex align-items-center justify-content-end">
+                                    <div class="Add-number font-weight-bold mr-2 pr-2">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme plus MxMn-pr">+</span>
+                                        <input class="d-flex align-items-center justify-content-center pt-1 font-weight-bold text-center number-pr" type="text" value="1">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme minus MxMn-pr">-</span>
+                                    </div>
+                                    <button class="delet-order border-0 h-100 bg-transparent"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 p-2">
+                            <div class="all-order each-order p-2 p-lg-3 row align-items-center">
+                                <div class="col-9 p-0 text-left font-weight-bold d-flex align-items-center">
+                                    <img class="w-25 float-left mr-2 pr-cart" src="images/p4.png" alt="image"/>
+                                    <div>
+                                        <h4 class="name-c mb-2 font-weight-bold">ساندویچ هات داگ ویژه</h4>
+                                        <p class="prc-order">قیمت  12,500,000<span>تومان</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 d-flex align-items-center justify-content-end">
+                                    <div class="Add-number font-weight-bold mr-2 pr-2">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme plus MxMn-pr">+</span>
+                                        <input class="d-flex align-items-center justify-content-center pt-1 font-weight-bold text-center number-pr" type="text" value="1">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme minus MxMn-pr">-</span>
+                                    </div>
+                                    <button class="delet-order border-0 h-100 bg-transparent"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 p-2">
+                            <div class="all-order each-order p-2 p-lg-3 row align-items-center">
+                                <div class="col-9 p-0 text-left font-weight-bold d-flex align-items-center">
+                                    <img class="w-25 float-left mr-2 pr-cart" src="images/p4.png" alt="image"/>
+                                    <div>
+                                        <h4 class="name-c mb-2 font-weight-bold">ساندویچ هات داگ ویژه</h4>
+                                        <p class="prc-order">قیمت  12,500,000<span>تومان</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 d-flex align-items-center justify-content-end">
+                                    <div class="Add-number font-weight-bold mr-2 pr-2">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme plus MxMn-pr">+</span>
+                                        <input class="d-flex align-items-center justify-content-center pt-1 font-weight-bold text-center number-pr" type="text" value="1">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme minus MxMn-pr">-</span>
+                                    </div>
+                                    <button class="delet-order border-0 h-100 bg-transparent"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 p-2">
+                            <div class="all-order each-order p-2 p-lg-3 row align-items-center">
+                                <div class="col-9 p-0 text-left font-weight-bold d-flex align-items-center">
+                                    <img class="w-25 float-left mr-2 pr-cart" src="images/p4.png" alt="image"/>
+                                    <div>
+                                        <h4 class="name-c mb-2 font-weight-bold">ساندویچ هات داگ ویژه</h4>
+                                        <p class="prc-order">قیمت  12,500,000<span>تومان</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0 d-flex align-items-center justify-content-end">
+                                    <div class="Add-number font-weight-bold mr-2 pr-2">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme plus MxMn-pr">+</span>
+                                        <input class="d-flex align-items-center justify-content-center pt-1 font-weight-bold text-center number-pr" type="text" value="1">
+                                        <span class="d-flex align-items-center justify-content-center pt-1 rounded-circle text-theme minus MxMn-pr">-</span>
+                                    </div>
+                                    <button class="delet-order border-0 h-100 bg-transparent"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-5 p-2">
+                <form class="BX-cart bg-white p-3">
+                    <h2 class="titl-c d-block position-relative mb-3 font-weight-bold text-center">خلاصه صورتحساب</h2>
+                    <div class="summery-cart">
+                        <ul class="summery-21">
+                            <li class="each-prc py-1 text-left"><label class="d-inline-block m-0 subjct-c">قیمت کل :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                            <li class="each-prc py-1 text-left"><label class="d-inline-block m-0 subjct-c">جمع سفارش :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                            <li class="each-prc py-1 text-left"><label class="d-inline-block m-0 subjct-c">تخفیف :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                            <li class="each-prc py-1 text-left"><label class="d-inline-block m-0 subjct-c">هزینه ارسال :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                            <li class="each-prc py-1 text-left"><label class="d-inline-block m-0 subjct-c">هزینه بسته بندی :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                            <li class="each-prc py-1 text-left"><label class="d-inline-block m-0 subjct-c">مالیات :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                            <li class="each-prc py-2 text-left mt-2 border-top font-weight-bold text-dark"><label class="d-inline-block m-0 subjct-c">مبلق قابل پرداخت :</label><p class="d-inline-block float-right deta-c">11.53 <span class="pr-1">تومان</span></p></li>
+                        </ul>
+                        <textarea class="som-descrbe rounded p-2 w-100 border-0" rows="4" placeholder="توضیحات سفارش"></textarea>
+                    </div>
+                    <a class="btn-efct1 py-3 text-white bg-theme rounded mt-3 d-block text-center" href="#">پرداخت و ثبت</a>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="P-Footer position-relative text-white text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 px-2"></div>
+            <div class="col-md-6 px-2">
+                <a class="d-block text-white logo-ft" href="/"><img class="mb-2" src="images/logo.png" alt="logo"/><h2 class="name-web font-weight-bold">فست فود ویس لند</h2> </a>
+                <div class="call-info d-flex align-items-center justify-content-center my-3">
+                    <div>
+                        <a class="phone-number dir-ltr d-block font-weight-bold text-white" href="tel:+982188993560">021 88 99 35 60</a>
+                        <p class="address-w">بلوار کشاورز , بین 16 آذر و قدس , پلاک 285</p>
+                    </div>
+                    <img class="ic-tele ml-2" src="images/p16.png" alt="icon" />
+                </div>
+                <ul class="Social-media d-flex align-items-center justify-content-center">
+                    <li><a class="media-li d-block position-relative m-2" href="#"><img src="images/p17.png" alt="icon"/></a></li>
+                    <li><a class="media-li d-block position-relative m-2" href="#"><img src="images/p18.png" alt="icon"/></a></li>
+                    <li><a class="media-li d-block position-relative m-2" href="#"><img src="images/p19.png" alt="icon"/></a></li>
+                    <li><a class="media-li d-block position-relative m-2" href="#"><img src="images/p20.png" alt="icon"/></a></li>
+                </ul>
+                <p class="copyRight my-3">
+                    <span>کلیه حقوق این سایت مربوط به ویس لند میباشد</span>
+                    <span class="gp-0 px-2">|</span>
+                    <span>طراحی و توسعه : نونگار پردازش</span>
+                </p>
+                <button class="map-web bg-theme1 text-white border-0 py-3 px-5 mt-2 font-weight-bold" data-toggle="modal" data-target="#mapmodal"><i class="mr-1 fas fa-map-marker-alt"></i>مارا در نقشه پیدا کنید</button>
+                <div class="Map-Modal modal fade align-items-center justify-content-center" id="mapmodal">
+                    <div class="modal-dialog w-100">
+                        <div class="modal-content">
+                            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+                            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+                            <div id="map-markers" style="height:400px;width: 100%; z-index: 0;"></div>
+                            <script>
+                                var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                        maxZoom: 18,
+                                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+                                    }),
+                                    latlng = L.latLng(37.563004, 45.078049); // tehran
+                                var map = L.map('map-markers', {center: latlng, zoom: 17, layers: [tiles]});
+                                var title = 'عنوان مارکر';
+                                var marker = L.marker(new L.LatLng(37.563004, 45.078049), {title: title});
+                                marker.bindPopup(title);
+                                map.addLayer(marker);
+                                map.addLayer(markers);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 px-2 d-flex align-items-center justify-content-center justify-content-md-end">
+                <a class="e-namd d-block p-2"><img src="images/p22.png" alt="e-namad"/></a>
+                <a class="e-namd d-block p-2"><img src="images/p21.png" alt="e-namad"/></a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="over-page"></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
